@@ -1,0 +1,45 @@
+{
+  "name": "track-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "dependencies": {
+    "@koa/cors": "^2.2.3",
+    "@types/koa": "^2.0.48",
+    "@types/koa-router": "^7.0.40",
+    "axios": "^0.19.0",
+    "bcrypt": "^3.0.6",
+    "cron": "^1.7.1",
+    "firebase": "^6.3.0",
+    "fs": "0.0.1-security",
+    "jsonwebtoken": "^8.5.1",
+    "koa": "^2.7.0",
+    "koa-body": "^4.1.0",
+    "koa-jwt": "^3.6.0",
+    "koa-passport": "^4.1.3",
+    "koa-router": "^7.4.0",
+    "lodash": "^4.17.14",
+    "mysql2": "^1.6.5",
+    "nodemon": "^1.19.1",
+    "passport-facebook-token": "^3.3.0",
+    "passport-instagram-token": "^2.3.0",
+    "pg": "^7.11.0",
+    "request": "^2.88.0",
+    "sequelize": "^5.8.6",
+    "sequelize-cli": "^5.4.0",
+    "smsapicom": "^1.5.1",
+    "ts-node": "^8.3.0",
+    "twilio": "^3.33.1",
+    "typescript": "^3.5.3"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.129"
+  },
+  "scripts": {
+    "start": "ts-node index.ts",
+    "start:dev": "nodemon",
+    "db:seed": "npx sequelize db:seed:all"
+  },
+  "author": "Styliff",
+  "license": "ISC"
+}

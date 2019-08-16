@@ -1,0 +1,21 @@
+<div class="container">
+  <form [formGroup]="emailMsgForm" (submit)="submit()" class="form">
+    <mat-form-field class="full-width">
+      <input formControlName="to" matInput placeholder="To" value="">
+    </mat-form-field>
+    <mat-form-field class="full-width">
+      <input formControlName="message" matInput placeholder="Message" value="">
+    </mat-form-field>
+    <mat-form-field class="full-width">
+      <input formControlName="subject" matInput placeholder="Subject" value="">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input formControlName="date" #dateInput matInput (focus)="picker.open(); dateInput.blur()" [matDatepicker]="picker" placeholder="Choose a date">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+
+    <button type="submit">Save</button>
+  </form>
+</div>

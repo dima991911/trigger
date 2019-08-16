@@ -1,0 +1,15 @@
+.form {
+  padding: 20px;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+}
+
+.container {
+  width: 460px;
+  margin: 0 auto;
+}
+
+.full-width {
+  width: 100%;
+  display: block;
+}
